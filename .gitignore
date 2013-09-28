@@ -29,7 +29,7 @@ function onDjAdv(obj) {
 	setTimeout(function(){document.getElementById("button-vote-positive").click();},1500);
 	var songStr = song;
 	var woots = obj.lastPlay.score.positive, mehs = obj.lastPlay.score.negative, curates = obj.lastPlay.score.curates ;
-	if (woots === 1) var ww = ' Woot //  '; else var ww = ' woots //  ';
+	if (woots === 1) var ww = ' Woot //  '; else var ww = ' Woots //  ';
 	if (mehs === 1) var mm = ' Meh // '; else var mm = ' mehs //  ';
 	if (curates === 1) var cc = ' Curate'; else var cc = ' curates';
 	var scoreStr = ' //  ' + woots + ww + mehs + mm + curates + cc;
