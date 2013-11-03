@@ -30,7 +30,7 @@ function onDjAdv(obj) {
 	var songStr = song;
 	var woots = obj.lastPlay.score.positive, mehs = obj.lastPlay.score.negative, curates = obj.lastPlay.score.curates ;
 	if (woots === 1) var ww = ' Woots , '; else var ww = ' Woots , ';
-	if (mehs === 1) var mm = ' Mehs. '; else var mm = ' Mehs. ';
+	if (mehs === 1) var mm = ' Mehs , '; else var mm = ' Mehs. ';
 	if (curates === 1) var cc = ' Curates'; else var cc = ' Curates';
 	var scoreStr = '  ' + woots + ww + mehs + mm + curates + cc;
 	API.sendChat('/em: ' + songStr + scoreStr);
