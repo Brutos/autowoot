@@ -32,7 +32,7 @@ function onDjAdv(obj) {
 	if (woots === 1) var ww = ' Woots , '; else var ww = ' Woots , ';
 	if (mehs === 1) var mm = ' Mehs. '; else var mm = ' Mehs :green_heart: ';
 	if (curates === 1) var cc = ' Curates'; else var cc = ' Curates';
-	var scoreStr = ' :+1: ' + woots + ww + mehs + mm + curates + cc;
+	var scoreStr = '  ' + woots + ww + mehs + mm + curates + cc;
 	API.sendChat('/em: ' + songStr + scoreStr);
 	song = API.getMedia().author + ' - ' + API.getMedia().title;
 }
