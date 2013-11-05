@@ -6,10 +6,10 @@ if (API.getDJs().length == 0) API.on(API.DJ_UPDATE,djUpdate);
 else song = API.getMedia().author + ' - ' + API.getMedia().title;
 
 function onChat(data) {
-	if (API.hasPermission(data.fromID,API.ROLE.BOUNCER)) {
+	if (API.hasPermission(data.fromID,API.ROLE.USERS)) {
 		var message = data.message.toLowerCase();
-		if (message.indexOf('!lock') == 0) API.moderateRoomProps(true,true);
-		if (message.indexOf('!unlock') == 0) API.moderateRoomProps(false,true);
+		if (message.indexOf('!off') == 0) API.moderateRoomProps(true,true);
+		if (message.indexOf('!offf') == 0) API.moderateRoomProps(false,true);
 		if (message.indexOf('!lockskip') == 0) {
 			API.moderateRoomProps(true,true);
 			setTimeout(function(){API.moderateForceSkip();},1500);
@@ -20,6 +20,7 @@ function onChat(data) {
 		if (message.indexOf('!napoli') == 0) API.sendChat('gayzao da sinuca http://prntscr.com/21wkrl!!!');
 		if (message.indexOf('!wolf') == 0) API.sendChat('viadão da sala!!!');
 		if (message.indexOf('!isillum') == 0) API.sendChat('gordo noob!!!');
+		if (message.indexOf('!infinity') == 0) API.sendChat('infinity da tim!!!');
 		if (message.indexOf('!kill') == 0) {
 			API.sendChat('bot desligado com sucesso.');
 			API.off(API.CHAT,onChat);
