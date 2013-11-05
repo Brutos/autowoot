@@ -17,7 +17,7 @@ function onChat(data) {
 		}
 		if (message.indexOf('!skip') == 0) API.moderateForceSkip();
 		if (message.indexOf('!brutos') == 0) API.sendChat('/me lindão gostoso vlw flw!!!');
-		if (message.indexOf('!Napoli') == 0) API.sendChat('/me só tapioca hoojeee!!!');
+		if (message.indexOf('!napoli') == 0) API.sendChat('/me só tapioca hoojeee!!!');
 		if (message.indexOf('!wolf') == 0) API.sendChat('/me viadão da sala!!!');
 		if (message.indexOf('!isillum') == 0) API.sendChat('/me gordo noob!!!');
 		if (message.indexOf('!infinity') == 0) API.sendChat('/me infinity da tim!!!');
