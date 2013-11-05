@@ -16,7 +16,10 @@ function onChat(data) {
 			setTimeout(function(){API.moderateRoomProps(false,true);},4000);
 		}
 		if (message.indexOf('!skip') == 0) API.moderateForceSkip();
-		if (message.indexOf('!ping') == 0) API.sendChat('Pong!');
+		if (message.indexOf('!brutos') == 0) API.sendChat('lindão gostoso vlw flw!!!');
+		if (message.indexOf('!napoli') == 0) API.sendChat('gayzao da sinuca http://prntscr.com/21wkrl!!!');
+		if (message.indexOf('!wolf') == 0) API.sendChat('viadão da sala!!!');
+		if (message.indexOf('!isillum') == 0) API.sendChat('gordo noob!!!');
 		if (message.indexOf('!kill') == 0) {
 			API.sendChat('bot desligado com sucesso.');
 			API.off(API.CHAT,onChat);
