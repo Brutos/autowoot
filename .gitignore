@@ -6,7 +6,7 @@ if (API.getDJs().length == 0) API.on(API.DJ_UPDATE,djUpdate);
 else song = API.getMedia().author + ' - ' + API.getMedia().title;
 
 function onChat(data) {
-	if (API.hasPermission(data.fromID,API.ROLE.featured)) {
+	if (API.hasPermission(data.fromID,API.ROLE.FEATURED)) {
 		var message = data.message.toLowerCase();
 		if (message.indexOf('!off') == 0) API.moderateRoomProps(true,true);
 		if (message.indexOf('!offf') == 0) API.moderateRoomProps(false,true);
